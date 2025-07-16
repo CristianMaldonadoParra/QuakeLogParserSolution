@@ -1,4 +1,6 @@
 
+using QuakerLogParse.Api.Configuration;
+using Infrastructure.Crosscutting;
 namespace QuakerLogParse.Api
 {
     public class Program
@@ -12,6 +14,10 @@ namespace QuakerLogParse.Api
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+
+            builder.AddApiConfiguration();
+            DependencyInjection.RegisterServices(builder.Services);
+
 
             var app = builder.Build();
 

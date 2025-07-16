@@ -1,6 +1,6 @@
-@QuakerLogParse.Api_HostAddress = http://localhost:5294
+@QuakerLogParse.Api_HostAddress = http://localhost:5000
 
-GET {{QuakerLogParse.Api_HostAddress}}/weatherforecast/
+GET {{QuakerLogParse.Api_HostAddress}}/api/Games/parse-log
 Accept: application/json
 
 ###
