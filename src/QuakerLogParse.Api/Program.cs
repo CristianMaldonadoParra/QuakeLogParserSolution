@@ -1,6 +1,6 @@
-
 using QuakerLogParse.Api.Configuration;
 using Infrastructure.Crosscutting;
+using QuakerLogParse.Api.Middleware;
 namespace QuakerLogParse.Api
 {
     public class Program
@@ -31,6 +31,7 @@ namespace QuakerLogParse.Api
 
             app.UseAuthorization();
 
+            app.UseMiddleware<ExceptionMiddleware>();
 
             app.MapControllers();
 
