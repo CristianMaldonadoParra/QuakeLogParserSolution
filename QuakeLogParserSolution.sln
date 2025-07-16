@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Api", "1 - Api", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -24,6 +24,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Data", "src\Infrastructure.Data\Infrastructure.Data.csproj", "{C8C07077-4D64-446F-A441-D8B8BC36BDDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.Crosscutting", "src\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj", "{7596017F-33C4-4063-AA2D-4CCE6C17EDDB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Test", "5 - Test", "{4B2847C5-4DD4-4B16-9AB3-2D666BEF1918}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuakeLogParser.Test", "src\QuakeLogParser.Test\QuakeLogParser.Test.csproj", "{5D93900E-9B3B-49AF-BFAA-663B473BC9C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{7596017F-33C4-4063-AA2D-4CCE6C17EDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7596017F-33C4-4063-AA2D-4CCE6C17EDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7596017F-33C4-4063-AA2D-4CCE6C17EDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D93900E-9B3B-49AF-BFAA-663B473BC9C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D93900E-9B3B-49AF-BFAA-663B473BC9C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D93900E-9B3B-49AF-BFAA-663B473BC9C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D93900E-9B3B-49AF-BFAA-663B473BC9C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,7 @@ Global
 		{D101B34A-3CAD-4780-AD27-DD5B5BCB754E} = {2C545368-8F21-4596-A6BB-7E2BA5D988B2}
 		{C8C07077-4D64-446F-A441-D8B8BC36BDDC} = {07243494-3E69-4B56-A740-563FE42ACE0A}
 		{7596017F-33C4-4063-AA2D-4CCE6C17EDDB} = {522D6E37-0FAA-4810-89BB-904314B86B6A}
+		{5D93900E-9B3B-49AF-BFAA-663B473BC9C9} = {4B2847C5-4DD4-4B16-9AB3-2D666BEF1918}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {382D791C-4368-4B9C-9468-2625E9E19759}
