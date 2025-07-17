@@ -4,8 +4,16 @@ using System.Text.RegularExpressions;
 
 namespace QuakerLogParse.Application.Services
 {
+    /// <summary>
+    /// Serviço responsável por fazer o parsing do arquivo de log do Quake e extrair informações dos jogos.
+    /// </summary>
     public class LogParserAppService : ILogParserAppService
     {
+        /// <summary>
+        /// Lê e processa o arquivo de log do Quake, retornando uma lista de jogos encontrados.
+        /// </summary>
+        /// <param name="logFilePath">Caminho do arquivo de log a ser processado.</param>
+        /// <returns>Lista de objetos <see cref="Game"/> representando cada jogo encontrado no log.</returns>
         public List<Game> ParseLog(string logFilePath)
         {
             var games = new List<Game>();
@@ -33,7 +41,11 @@ namespace QuakerLogParse.Application.Services
             return games;
         }
 
-
+        /// <summary>
+        /// Processa uma linha de kill do log, atualizando as estatísticas de kills e jogadores do jogo.
+        /// </summary>
+        /// <param name="line">Linha do log contendo o evento de kill.</param>
+        /// <param name="game">Instância do jogo que será atualizada.</param>
         private void ParseKill(string line, Game game)
         {
             var match = Regex.Match(line, @"Kill: \d+ \d+ \d+: (.+) killed (.+) by");
